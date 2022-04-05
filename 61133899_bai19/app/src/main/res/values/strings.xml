@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">61133899_bai19</string>
+    <string-array name="ListViewActivity">
+        <item>Hà nội</item>
+        <item>Huế</item>
+        <item>Spa</item>
+        <item>côn sơn</item>
+        <item>vũng tàu</item>
+        <item>đà nẵng</item>
+
+    </string-array>
+
+</resources>
