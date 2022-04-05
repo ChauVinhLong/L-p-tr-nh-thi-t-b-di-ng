@@ -16,7 +16,13 @@ public class MainActivity3 extends AppCompatActivity {
         setContentView(R.layout.activity_main3);
 
         edtChaoMung= (TextView) findViewById(R.id.edtChaoMung);
-        String name =  edtChaoMung.getText().toString();
+        Intent intent =getIntent();
+        float name=intent.getExtras().getFloat("name");
+
+        float cm = name;
+        String in =""+String.valueOf(cm);
+        edtChaoMung.setText(String.valueOf(in));
+
 
     }
 
