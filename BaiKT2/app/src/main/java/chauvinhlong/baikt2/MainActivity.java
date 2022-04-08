@@ -8,13 +8,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     RadioGroup rGR;
     Button btnTip;
     RadioButton radioButton;
-    EditText edtNhap,Tinh;
+    EditText edtNhap;
+    TextView tvKQ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,15 +24,14 @@ public class MainActivity extends AppCompatActivity {
         rGR = findViewById(R.id.rGR);
         btnTip = findViewById(R.id.btnTip);
         edtNhap = findViewById(R.id.edtNhap);
-        Tinh = findViewById(R.id.Tinh);
+        tvKQ = findViewById(R.id.tvKQ);
 
         btnTip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 int radioID =  rGR.getCheckedRadioButtonId();
                 radioButton = findViewById(radioID);
-
-
+                tvKQ.setText("Your tip will be $"+radioButton.getText());
             }
         });
     }
