@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         edtNhap = findViewById(R.id.edtNhap);
         tvKQ = findViewById(R.id.tvKQ);
 
+
         btnTip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
